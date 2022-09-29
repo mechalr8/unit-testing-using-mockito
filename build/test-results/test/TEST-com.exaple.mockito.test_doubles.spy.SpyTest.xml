@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.exaple.mockito.test_doubles.spy.SpyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-29T08:17:37" hostname="HARSIT-AGARWAL" time="1.244">
-  <properties/>
-  <testcase name="spyMockWithMockito()" classname="com.exaple.mockito.test_doubles.spy.SpyTest" time="1.244"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
