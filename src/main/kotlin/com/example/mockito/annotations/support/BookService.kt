@@ -1,9 +1,9 @@
 package com.example.mockito.annotations.support
 
-class   BookService(bookRepository: com.example.mockito.annotations.support.BookRepository) {
-    private var bookRepository: com.example.mockito.annotations.support.BookRepository? = bookRepository
+class   BookService(bookRepository: BookRepository) {
+    private var bookRepository: BookRepository? = bookRepository
 
-    fun getNewBookWithAppliedDiscount(discountRate: Int, days: Int): List<com.example.mockito.annotations.support.Book>{
+    fun getNewBookWithAppliedDiscount(discountRate: Int, days: Int): List<Book>{
         val newBooks = bookRepository?.findNewBooks(days)
 
         newBooks?.forEach {

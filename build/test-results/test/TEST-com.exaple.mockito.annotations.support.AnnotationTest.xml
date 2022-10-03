@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.exaple.mockito.annotations.support.AnnotationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-29T10:34:39" hostname="HARSIT-AGARWAL" time="1.404">
-  <properties/>
-  <testcase name="demoCreateMocksUsingAnnotations()" classname="com.exaple.mockito.annotations.support.AnnotationTest" time="1.404"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

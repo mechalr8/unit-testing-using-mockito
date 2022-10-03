@@ -13,20 +13,18 @@ import kotlin.test.assertEquals
 class AnnotationTest {
 
     @InjectMocks
-    private lateinit var bookService: com.example.mockito.annotations.support.BookService
+    private lateinit var bookService: BookService
 
     @Mock
-    private lateinit var bookRepository: com.example.mockito.annotations.support.BookRepository
+    private lateinit var bookRepository: BookRepository
 
     @Test
     fun demoCreateMocksUsingAnnotations(){
 
-        val book1 =
-            com.example.mockito.annotations.support.Book("1234", "Mockito in Action", 530, LocalDate.now().toString())
-        val book2 =
-            com.example.mockito.annotations.support.Book("1235", "JUnit 5 in Action", 480, LocalDate.now().toString())
+        val book1 = Book("1234", "Mockito in Action", 530, LocalDate.now().toString())
+        val book2 = Book("1235", "JUnit 5 in Action", 480, LocalDate.now().toString())
 
-        val books = ArrayList<com.example.mockito.annotations.support.Book>()
+        val books = ArrayList<Book>()
         books.add(book1)
         books.add(book2)
         Mockito.`when`(bookRepository.findNewBooks(7)).thenReturn(books)
