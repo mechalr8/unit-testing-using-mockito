@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.mockito.stubbing.BookServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-03T14:08:50" hostname="HARSIT-AGARWAL" time="1.335">
+<testsuite name="com.example.mockito.stubbing.BookServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-06T09:39:42" hostname="HARSIT-AGARWAL" time="2.251">
   <properties/>
-  <testcase name="textCalculateTotalCostOfBooks()" classname="com.example.mockito.stubbing.BookServiceTest" time="1.335"/>
+  <testcase name="testSaveBook()" classname="com.example.mockito.stubbing.BookServiceTest" time="2.251"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

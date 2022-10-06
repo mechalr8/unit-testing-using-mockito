@@ -23,4 +23,8 @@ class   BookService(bookRepository: BookRepository) {
         }
         return total
     }
+
+    fun addBook(book: Book){
+        bookRepository?.save(book)
+    }
 }

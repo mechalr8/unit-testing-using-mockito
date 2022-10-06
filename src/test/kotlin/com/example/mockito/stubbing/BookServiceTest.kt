@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
-import org.mockito.Mockito.doReturn
-import org.mockito.Mockito.`when`
+import org.mockito.Mockito.*
 import org.mockito.junit.jupiter.MockitoExtension
 import java.time.LocalDate
 import kotlin.test.assertEquals
@@ -39,5 +38,15 @@ class BookServiceTest {
 
         val actualCost = bookService.calculateTotalCost(bookIds)
         assertEquals(1060, actualCost)
+    }
+
+
+//    Stubbing void methods using Mockito. addBook calls the save method from the BookRepository and return type of \
+//    save is void
+    @Test
+    fun testSaveBook(){
+        val book1 = Book(null, "Mockito in Action", 530, LocalDate.now().toString())
+        doNothing().`when`(bookRepository).save(book1)
+        bookService.addBook(book1)
     }
 }
